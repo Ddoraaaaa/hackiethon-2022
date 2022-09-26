@@ -1,0 +1,9 @@
+.contact-flex-container {
+  display: flex; 
+}
+
+.contact-flex-item {
+  margin: 5px; 
+  padding: 5px; 
+  background-color: aqua;
+}
