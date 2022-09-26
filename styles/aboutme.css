@@ -1,0 +1,27 @@
+.section {
+    width: 60vw;
+    height: 80vh;
+    background-color: #f4ecdf;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me {
+    display: flex;
+}
+
+.container {
+    display: flex;
+}
+
+img {
+    flex-shrink: 0.6;
+}
+
+p {
+    flex-grow: 1;
+}
+
+.header {
+    font-weight: bold;
+}
