@@ -130,7 +130,7 @@ function addPne(year) {
 
 for(let i=1; i<=3; i++) {
     const cardDiv = document.createElement("div");
-    cardDiv.classList.add("swiper-slide");
+    cardDiv.classList.add("swiper-slide", "enp");
     appendStr='';
     addPne(i);
     console.log(appendStr);
