@@ -26,9 +26,3 @@ const swiper = new Swiper('.swiper', {
       },
     },
   });
-
-  swiper.addSlide(4, [
-    '<div class="swiper-slide">Slide 10"</div>',
-    '<div class="swiper-slide">Slide 11"</div>'
-   ]);
-  

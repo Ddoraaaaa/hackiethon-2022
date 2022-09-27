@@ -1,13 +1,4 @@
 .swiper {
-<<<<<<< Updated upstream
-    width: 100vw;
-    height: 100vh;
-    background-color: aquamarine;
-  }
-
-li.enp-card {
-  display: flex;
-=======
   width: 100vw;
   height: 100vh;
   background-color: #AAE1D1;
@@ -21,5 +12,4 @@ li.enp-card {
   width: 4vh;
   height: 4vh; 
   background-color: #5FC53B;
->>>>>>> Stashed changes
 }
