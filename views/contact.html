@@ -43,14 +43,14 @@
                 <p class="help is-success">This email is valid</p>
               </div>
               
-              <div class="contact-flex-container form-entry" style="gap: 4px">
-                <div class="field" style="width: 50%;">
+              <div class="contact-flex-container form-entry" style="gap: 5%">
+                <div class="field" style="width: 50%;" style="flex:1">
                   <label>Your message</label>
                   <div class="control">
-                    <textarea class="textarea is-small" placeholder="Whaddayawanna tell me?" name="message"></textarea>
+                    <textarea class="textarea is-small" placeholder="Whaddayawanna tell me?" name="message" rows="3"></textarea>
                   </div>
                 </div>
-                <div class="field">
+                <div class="field" style="flex:1">
                   <label>Saul Goodman?</label>
                   <div class="control">
                     <div class="select is-small">
@@ -62,8 +62,8 @@
                     </div>
                   </div>
                   <div id="buttons-wrapper" class="control">
-                    <button class="button is-small">Reset</button>
-                    <button class="button is-small is-success">Submit</button>
+                    <input type="reset" class="button is-small is-warning is-dark" style="flex:1">
+                    <button type="submit" class="button is-small is-success" style="flex:1">Submit</button>
                   </div>
                 </div>
               </div>
