@@ -31,16 +31,32 @@
   width:15vh;
   height:13vh;
 }
-
-.swiper-wrapper.swiper-wrapper:nthelement(1) { 
+.slide-bg { 
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  background-image: url("https://thumbs.dreamstime.com/z/spring-road-24032590.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+.slide-content { 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative; 
+  width: 100%;
+  height: 100%;
+}
+.swiper-wrapper .swiper-slide:nthelement(1) > div {   
   background-image: 'https://www.travelandleisure.com/thmb/xSoLvzJf9BZLHIB_9H_qfcKUD2Q=/1800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/motukiekie-new-zealand-beach-GREATCOASTNZ0422-b271eb18b4bf41249fa492c3aca3202d.jpg';
 }
-.swiper-wrapper.swiper-wrapper:nthelement(2) { 
+.swiper-wrapper .swiper-slide:nthelement(2) > div { 
   background-image: 'https://thumbs.dreamstime.com/z/spring-road-24032590.jpg';
 }
-.swiper-wrapper.swiper-wrapper:nthelement(3) { 
+.swiper-wrapper .swiper-slide:nthelement(3) > div { 
   background-image: 'https://artloversaustralia.com.au/wp-content/uploads/2020/07/Melbourne-Autumn-1024x768.jpg';
 }
-.swiper-wrapper.swiper-wrapper:nthelement(4) { 
-  background-image: 'https://cdn.mos.cms.futurecdn.net/8Zw7hWD5ZaquyftsRbEmof-1920-80.jpg.webp';
+.swiper-wrapper .swiper-slide:nthelement(4) > div { 
+  background-image: 'https://cdn.mos.cms.futurecdn.ne t/8Zw7hWD5ZaquyftsRbEmof-1920-80.jpg.webp';
 }

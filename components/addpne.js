@@ -46,7 +46,7 @@ const EXPS = [
     }
 ];
 
-console.log(1234);
+// console.log(1234);
 var appendStr;
 
 function insertImg(pne) {
@@ -133,6 +133,10 @@ function addPne(year) {
     appendStr += 
     `
     </div>`;
+
+    // add a wrapper
+
+    appendStr = '<div class="slide-bg"></div> <div class="slide-content">' + appendStr + '</div>'; 
 }
 
 
@@ -141,7 +145,7 @@ for(let i=1; i<=3; i++) {
     cardDiv.classList.add("swiper-slide", "enp");
     appendStr='';
     addPne(i);
-    console.log(appendStr);
+    // console.log(appendStr);
     cardDiv.innerHTML=appendStr;
     document.getElementById("add-card").appendChild(cardDiv);
 }
