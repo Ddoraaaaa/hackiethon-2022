@@ -52,19 +52,24 @@ var appendStr;
 function insertImg(pne) {
     appendStr +=
             `
-            <img width="100" height="100" src="${pne.img}">`
+                <td style="height:8vh;width:10vw">
+                    <img width=100px height=100px src="${pne.img}">
+                </td>`;
 }
 
 function insertTxt(pne) {
     appendStr +=
             `
-            <div class="p-card-txt">
-                <h4><b>${pne.name}</b></h4>
-                <p>${pne.brief}</p>
-            </div>
-            <div class="p-card-txt">
-                <p><i>${pne.time}</i></p>
-            </div>`
+                <td style="height:8vh;width:60vw">
+                    <div class="p-card-txt">
+                        <p style="font-size:8vmin;"><b>${pne.name}</b></p>
+                        <p>${pne.brief}</p>
+                    </div>
+                    <div class="p-card-txt">
+                        <p><i>${pne.time}</i></p>
+                    </div>
+                </td>
+            `
 }
 
 function addPne(year) {
@@ -80,8 +85,8 @@ function addPne(year) {
             matchCount++;    
             appendStr += 
         `
-        <div class="enp-card">`;
-        
+        <table class="enp-card">
+            <tr>`;
             if(matchCount%2==0) {
                 insertImg(project);
                 insertTxt(project);
@@ -92,7 +97,8 @@ function addPne(year) {
             }
             appendStr +=
         `
-        </div>`;
+            </tr>
+        </table>`;
         }
     }
 
@@ -106,7 +112,8 @@ function addPne(year) {
             matchCount++;
             appendStr +=
         `
-        <div class="enp-card">`;
+        <table class="enp-card">
+            <tr>`;
 
             if(matchCount%2==0) {
                 insertImg(exp);
@@ -118,7 +125,8 @@ function addPne(year) {
             }
             appendStr +=
         `
-        </div>`;
+            </tr>
+        </table>`;
         }
     }
 
