@@ -2,7 +2,7 @@
 
 html, body {
   height: 100%; 
-  margin: 0;  /* Remove default <body> margin */
+  margin: 0;
 }
 
 #contact {

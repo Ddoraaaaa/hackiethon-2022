@@ -71,7 +71,7 @@ function addPne(year) {
     let matchCount = 0;
     appendStr += 
 `
-    <div class="projects">`;
+    <div class="projects enp">`;
     // console.log(appendStr);
 
     for(const project of PROJECTS) {
@@ -99,7 +99,7 @@ function addPne(year) {
     appendStr += 
     `
     </div>
-    <div class="experiences">`;
+    <div class="experiences enp">`;
 
     for(const exp of EXPS) {
         if(exp.year.includes(year)) {
