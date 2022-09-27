@@ -1,6 +1,5 @@
 .about-me {
     width: 60vw;
-    background-image: linear-gradient(to top, #1F3583, #ffeeff);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,6 +43,18 @@ img.profile {
     background-color: #ffeeff;
     opacity: 90%;
 }
+
+#delay {
+    background-image: linear-gradient(to top, #899BDA, #ffeeff);
+    transition-property: background-image;
+    transition-duration: 1s;
+    transition-delay: 1s;
+  }
+  
+#delay:hover {
+    background-image: linear-gradient(to bottom, #899BDA, #ffeeff);
+}
+
 
 .header {
     font-weight: bold;
