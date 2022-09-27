@@ -10,10 +10,13 @@
 
 .align-left {
     text-align: left;
+    align-items: left;
+    justify-content: center;
 }
 
 .align-right {
     text-align: right;
+    align-items: right;
 }
 
 .line {
@@ -68,13 +71,25 @@
     opacity: 90%;
 }
 
+.about-container > p {
+    font-size: 20px;
+    margin: 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    flex-grow: 1;
+    flex-basis: 20%;
+    text-align: left;
+    background-color: #ffeeff;
+    opacity: 90%;
+}
+
 #delay {
     background-color: #13424199;
     transition-duration: 1s;
   }
   
 #delay:hover {
-    background-color: #134241ee;
+    background-color: #134241dd;
     transition-property: background-color;
     transition-duration: 1s;
 }
@@ -84,4 +99,10 @@
     font-size: 40px;
     font-weight: bold;
     margin: 0px auto;
+    color: black;
+}
+
+.fullscreen {
+    width: 100vw;
+    height: 99vh;
 }
