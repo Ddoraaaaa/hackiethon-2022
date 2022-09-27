@@ -154,17 +154,15 @@ for(year of years) {
     const backgroundSlide = document.createElement("div");
 
     contentSlide.classList.add("swiper-slide", "content-slide");
-    // controlSlide.classList.add("swiper-slide", "control-slide");
+    controlSlide.classList.add("swiper-slide", "control-slide");
     backgroundSlide.classList.add("swiper-slide", "background-slide");
     
     appendStr=''; addPne(year.id);
     contentSlide.innerHTML=appendStr;
-
-    // controlSlide.innerHTML=year.id; 
-
-    backgroundSlide.innerHTML=`<img src=${year.bg}>`; 
+    controlSlide.innerHTML=year.id; 
+    backgroundSlide.innerHTML=`<img src=${year.bg} width=100% height=100%>`; 
 
     document.getElementById("content-wrapper").appendChild(contentSlide);
-    // document.getElementById("control-wrapper").appendChild(controlSlide); 
+    document.getElementById("control-wrapper").appendChild(controlSlide); 
     document.getElementById("background-wrapper").appendChild(backgroundSlide);
 }

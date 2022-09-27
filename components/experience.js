@@ -17,12 +17,15 @@ const contentSwiper = new Swiper('#content-swiper', {
   });
 
   const controlSwiper = new Swiper('#control-swiper', {
-    direction: 'horizontal',
+    spaceBetween: 10,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    touchRatio: 0.2,
+    slideToClickedSlide: true,
     loop: true,
+    loopedSlides: 4
   });
 
-// backgroundSwiper.controller.control = contentSwiper; 
 contentSwiper.controller.control = [controlSwiper, backgroundSwiper];
 controlSwiper.controller.control = [contentSwiper];  
-// controlSwiper.controller.control = contentSwiper; 
 
