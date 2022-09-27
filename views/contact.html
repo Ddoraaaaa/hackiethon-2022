@@ -14,7 +14,7 @@
           <div id="form-wrapper">
             <h1>L...Let's chat 👉👈</h1>
             <div>To: bockacalls@gmail.com</div>
-            <form action="#" style="height: 100%;">
+            <!-- <form action="post" style="height: 100%;" name="google-sheet">
               <input class="form-entry" type="text" placeholder="Name" />
               <br> 
               <input class="form-entry" type="text" placeholder="Email" />
@@ -22,9 +22,36 @@
               <input class="form-entry" type="text" placeholder="What do you want to tell me?" style="height: 30%;" />
               <br>
               <div class="form-entry" style="display:flex;justify-content:center">
-                <input type="submit" value="Submit">
+                <input type="submit" value="Send!">
               </div>
+            </form> -->
+            <form
+              action="https://formspree.io/f/mbjbobbv"
+              method="POST"
+              style="height: 100%;""
+            >
+              <label>
+                Your name
+                <br> 
+                <input class="form-entry" type="text" placeholder="Namee" name="name"/>
+              </label>
+              <br> 
+              <label>
+                Your email
+                <br> 
+                <input class="form-entry" type="text" placeholder="Email" name="email"/>
+              </label>
+              <br> 
+              <label>
+                Your message
+                <br> 
+                <input class="form-entry" type="text" placeholder="Whaddayawanna tell me?" style="height: 30%;" name="message"/>
+              </label>
+              <br> 
+              <button type="submit">Send!</button>
             </form>
+
+            <script src="./components/contact.js" crossorigin="anonymous"></script>
           </div>
         </div> 
         
@@ -39,7 +66,7 @@
       </div>
       
       <div id="contact-footer" class="contact-item">
-        Made with ❤️ <br> artsstudents @ hackiethon2022
+        <br> Made with ❤️ <br> artsstudents @ hackiethon2022
       </div>
 
     </div>
