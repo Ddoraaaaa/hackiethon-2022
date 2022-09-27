@@ -2,13 +2,14 @@
  const backgroundSwiper = new Swiper('#background-swiper', {
   // direction: 'horizontal',
   effect: 'fade',
-  speed: 50000,
-  loop: true,
+  // loop: true,
 });
 
 const contentSwiper = new Swiper('#content-swiper', {
     direction: 'horizontal',
-    loop: true,
+    speed: 3000,
+    // effect: 'fade',
+    // loop: true,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

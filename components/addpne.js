@@ -11,10 +11,10 @@ const years = [
         id: 2023, 
         bg: ".\/assets\/winter.jpg",
     },
-    // { 
-    //     id: 2024, 
-    //     bg: ".\/assets\/winter.jpg",
-    // }
+    { 
+        id: 0, 
+        bg: ".\/assets\/tree-1.jpg",
+    }
 ]; 
 const PROJECTS = [
     {
