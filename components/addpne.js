@@ -10,7 +10,11 @@ const years = [
     { 
         id: 2023, 
         bg: ".\/assets\/winter.jpg",
-    }
+    },
+    // { 
+    //     id: 2024, 
+    //     bg: ".\/assets\/winter.jpg",
+    // }
 ]; 
 const PROJECTS = [
     {
@@ -150,19 +154,19 @@ function addPne(yearId) {
 
 for(year of years) {
     const contentSlide = document.createElement("div");
-    const controlSlide = document.createElement("div"); 
+    // const controlSlide = document.createElement("div"); 
     const backgroundSlide = document.createElement("div");
 
     contentSlide.classList.add("swiper-slide", "content-slide");
-    controlSlide.classList.add("swiper-slide", "control-slide");
+    // controlSlide.classList.add("swiper-slide", "control-slide");
     backgroundSlide.classList.add("swiper-slide", "background-slide");
     
     appendStr=''; addPne(year.id);
     contentSlide.innerHTML=appendStr;
-    controlSlide.innerHTML=year.id; 
+    // controlSlide.innerHTML=year.id; 
     backgroundSlide.innerHTML=`<img src=${year.bg} width=100% height=100%>`; 
 
     document.getElementById("content-wrapper").appendChild(contentSlide);
-    document.getElementById("control-wrapper").appendChild(controlSlide); 
+    // document.getElementById("control-wrapper").appendChild(controlSlide); 
     document.getElementById("background-wrapper").appendChild(backgroundSlide);
 }
