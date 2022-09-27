@@ -1,24 +1,38 @@
+const years = [
+    { 
+        id: 2021, 
+        bg: ".\/assets\/spring.jpg",
+    }, 
+    { 
+        id: 2022, 
+        bg: ".\/assets\/fall.jpg",
+    }, 
+    { 
+        id: 2023, 
+        bg: ".\/assets\/winter.jpg",
+    }
+]; 
 const PROJECTS = [
     {
         img: "https://placekitten.com/200/200",
         name: "Cool project 1",
         brief: "Project to use in other cool stuffs very cool cool COOL!!!",
         time: "May 2020 - Dec 2020",
-        year: [1, 2, 3],
+        year: [2021, 2022, 2023],
     },
     {
         img: "https://placekitten.com/200/241",
         name: "Cool project 2",
         brief: "I like the bee movie pls love",
         time: "May 2020 - Dec 20222",
-        year: [2, 3],
+        year: [2022, 2023],
     },
     {
         img: "https://placekitten.com/181/201",
         name: "Cool project 3",
         brief: "Peepeepoopoo bgfeuyuibadefbh dwiuef iufe iue fhiuefw u hefw huifew",
         time: "May 2020 - Dec 20222",
-        year: [1, 2],
+        year: [2021, 2022],
     },
 ];
 
@@ -28,21 +42,21 @@ const EXPS = [
         name: "Optiver",
         brief: "I developed some things for them and they used those shit yeah haha!",
         time: " May 2021 - May 2022",
-        year: [1],
+        year: [2021],
     },
     {
         img: "https://placekitten.com/130/120",
         name: "Cat place",
         brief: "I love cats. I probably don't eat them. Probably.",
         time: "Jan 2020 - Feb 2021",
-        year: [1],
+        year: [2021],
     },
     {
         img: "https://placekitten.com/148/127",
         name: "IntegraDev",
         brief: "They pay a lot. Well the CEO is a sweet person",
         time: "Jan 2019 - Feb 2999",
-        year: [2, 3],
+        year: [2022, 2023],
     }
 ];
 
@@ -72,16 +86,15 @@ function insertTxt(pne) {
             `
 }
 
-function addPne(year) {
+function addPne(yearId) {
     let matchCount = 0;
     appendStr += 
 `
     <div class="projects enp">`;
-    // console.log(appendStr);
 
     for(const project of PROJECTS) {
         // console.log(project);
-        if(project.year.includes(year)) {
+        if(project.year.includes(yearId)) {
             matchCount++;    
             appendStr += 
         `
@@ -108,7 +121,7 @@ function addPne(year) {
     <div class="experiences enp">`;
 
     for(const exp of EXPS) {
-        if(exp.year.includes(year)) {
+        if(exp.year.includes(yearId)) {
             matchCount++;
             appendStr +=
         `
@@ -133,19 +146,25 @@ function addPne(year) {
     appendStr += 
     `
     </div>`;
-
-    // add a wrapper
-
-    appendStr = '<div class="slide-bg"></div> <div class="slide-content">' + appendStr + '</div>'; 
 }
 
+for(year of years) {
+    const contentSlide = document.createElement("div");
+    const controlSlide = document.createElement("div"); 
+    const backgroundSlide = document.createElement("div");
 
-for(let i=1; i<=4; i++) {
-    const cardDiv = document.createElement("div");
-    cardDiv.classList.add("swiper-slide", "enp");
-    appendStr='';
-    addPne(i);
-    // console.log(appendStr);
-    cardDiv.innerHTML=appendStr;
-    document.getElementById("add-card").appendChild(cardDiv);
+    contentSlide.classList.add("swiper-slide", "content-slide");
+    // controlSlide.classList.add("swiper-slide", "control-slide");
+    backgroundSlide.classList.add("swiper-slide", "background-slide");
+    
+    appendStr=''; addPne(year.id);
+    contentSlide.innerHTML=appendStr;
+
+    // controlSlide.innerHTML=year.id; 
+
+    backgroundSlide.innerHTML=`<img src=${year.bg}>`; 
+
+    document.getElementById("content-wrapper").appendChild(contentSlide);
+    // document.getElementById("control-wrapper").appendChild(controlSlide); 
+    document.getElementById("background-wrapper").appendChild(backgroundSlide);
 }
