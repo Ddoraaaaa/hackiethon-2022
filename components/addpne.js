@@ -140,7 +140,7 @@ function addPne(year) {
 }
 
 
-for(let i=1; i<=3; i++) {
+for(let i=1; i<=4; i++) {
     const cardDiv = document.createElement("div");
     cardDiv.classList.add("swiper-slide", "enp");
     appendStr='';

@@ -30,3 +30,8 @@ body {
 .section {
     flex-basis: auto;
 }
+
+.nav--hidden {
+    transform: translateY(calc(-1 * var(--nav-height)));
+    box-shadow: none;
+  }
