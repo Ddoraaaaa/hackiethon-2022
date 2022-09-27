@@ -1,4 +1,5 @@
 .swiper {
+<<<<<<< Updated upstream
     width: 100vw;
     height: 100vh;
     background-color: aquamarine;
@@ -6,4 +7,19 @@
 
 li.enp-card {
   display: flex;
+=======
+  width: 100vw;
+  height: 100vh;
+  background-color: #AAE1D1;
+}
+.swiper-pagination-bullet { 
+  width: 4vh;
+  height: 4vh; 
+  background-color: 'black';
+}
+.swiper-pagination-bullet-active { 
+  width: 4vh;
+  height: 4vh; 
+  background-color: #5FC53B;
+>>>>>>> Stashed changes
 }

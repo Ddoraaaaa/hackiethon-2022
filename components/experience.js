@@ -1,11 +1,12 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: true,
   
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
   
     // Navigation arrows
@@ -18,10 +19,16 @@ const swiper = new Swiper('.swiper', {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
+    
     on: {
       init: function () {
         console.log('swiper initialized');
       },
     },
   });
+
+  swiper.addSlide(4, [
+    '<div class="swiper-slide">Slide 10"</div>',
+    '<div class="swiper-slide">Slide 11"</div>'
+   ]);
   
