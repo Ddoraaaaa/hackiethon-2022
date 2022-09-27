@@ -1,6 +1,8 @@
 
  const backgroundSwiper = new Swiper('#background-swiper', {
-  direction: 'vertical',
+  // direction: 'horizontal',
+  effect: 'fade',
+  speed: 50000,
   loop: true,
 });
 
