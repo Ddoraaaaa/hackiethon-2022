@@ -1,27 +1,51 @@
-.section {
+.about-me {
     width: 60vw;
-    height: 80vh;
-    background-color: #f4ecdf;
+    background-image: linear-gradient(to top, #1F3583, #ffeeff);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
-.about-me {
-    display: flex;
+.line {
+    width: 10rem;
+    height: 3px;
+    background-color: palevioletred;
+    margin: 0px auto;
 }
 
 .container {
     display: flex;
+    justify-content: space-between;
 }
 
-img {
+.profile {
+    margin: 1rem;
+    border: 1rem;
+    border-radius: 100%;
+    border-color: red;
+}
+
+img.profile {
+    width: 40%;
     flex-shrink: 0.6;
+    flex-basis: 10%;
+    background-color: #ffeeff;
+    margin: 0.5rem;
 }
 
-p {
+.container > p {
+    margin: 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
     flex-grow: 1;
+    flex-basis: 20%;
+    text-align: left;
+    background-color: #ffeeff;
+    opacity: 90%;
 }
 
 .header {
     font-weight: bold;
+    margin: 0px auto;
 }
