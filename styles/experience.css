@@ -13,3 +13,7 @@
   height: 4vh; 
   background-color: #5FC53B;
 }
+
+li.enp-card {
+  display: flex;
+}
