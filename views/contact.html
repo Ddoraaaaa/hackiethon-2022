@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" />
   </head>
   <body>
     <!-- Note: Only the div is needed -->
     <div id="contact"> 
-      <h1>Let's chat!</h1> 
-      <div class="contact-flex-container">
-        <div class="contact-flex-item">
-          <h2>Socials and links</h2>
-          Insert some text here
-          <div>(Logo) bockacalls@gmail.com | (+61)123-456-789</div> 
-          <div>(Logo) Connect with me on <a href="">Linkedin</a></div>
-          <div>(Logo) Check out my <a href="https://github.com/Ddoraaaaa/hackiethon-2022">Github</a></div>
-        </div>
-        <div class="contact-flex-item">
-          <h2>I don't know what to put here</h2>
-          <form action="#">
-            <label>Name</label> 
+      <div id=contact-main class="contact-item contact-flex-container">
+
+        <div id="contact-form">
+          <h1>L...Let's chat 👉👈</h1>
+          <div>To: bockacalls@gmail.com</div>
+          <form action="#" style="height: 100%;">
+            <input class="form-entry" type="text" placeholder="Name" />
             <br> 
-            <input type="text"></input>
+            <input class="form-entry" type="text" placeholder="Email" />
             <br> 
-            <label>Your message</label>
-            <br> 
-            <textarea placeholder="placeholder text" rows="20" cols="50"></textarea>
+            <input class="form-entry" type="text" placeholder="What do you want to tell me?" style="height: 30%;" />
             <br>
-            <input type="submit" value="Submit">
+            <div class="form-entry" style="display:flex;justify-content:center">
+              <input type="submit" value="Submit">
+            </div>
           </form>
         </div> 
+        
+        <div id="contact-links-wrapper"> 
+          <div id="contact-links">
+            <div>Logo Linkedin</a></div>
+            <div>Logo Github</div>
+            <div>Logo FB</div> 
+          </div>
+        </div>
+
       </div>
+      
+      <div id="contact-footer" class="contact-item">
+        Made with ❤️ <br> artsstudents @ hackiethon2022
+      </div>
+
     </div>
   </body>
 </html>
