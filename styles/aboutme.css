@@ -13,7 +13,7 @@
     margin: 0px auto;
 }
 
-.container {
+.about-container {
     display: flex;
     justify-content: space-between;
 }
@@ -21,19 +21,20 @@
 .profile {
     margin: 1rem;
     border: 1rem;
-    border-radius: 100%;
     border-color: red;
 }
 
-img.profile {
-    width: 40%;
+.profile > img {
+    width: 200px;
     flex-shrink: 0.6;
     flex-basis: 10%;
     background-color: #ffeeff;
     margin: 0.5rem;
+    
+    border-radius: 100%;
 }
 
-.container > p {
+.about-container > p {
     margin: 2rem;
     padding: 0.5rem;
     border-radius: 1rem;
@@ -45,14 +46,14 @@ img.profile {
 }
 
 #delay {
-    background-image: linear-gradient(to top, #899BDA, #ffeeff);
+    background-image: linear-gradient(to top, #134241, #ffeeff);
     transition-property: background-image;
     transition-duration: 1s;
     transition-delay: 1s;
   }
   
 #delay:hover {
-    background-image: linear-gradient(to bottom, #899BDA, #ffeeff);
+    background-image: linear-gradient(to bottom, #134241, #ffeeff);
 }
 
 
