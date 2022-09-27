@@ -16,6 +16,7 @@ body {
     width: 100vw; 
     scroll-snap-align: start;
     flex: none;
+    overflow: hidden;
 }
 .y.container > div {
     line-height: 256px;

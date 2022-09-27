@@ -28,7 +28,7 @@ const EXPS = [
         name: "Optiver",
         brief: "I developed some things for them and they used those shit yeah haha!",
         time: " May 2021 - May 2022",
-        year: [1, 2],
+        year: [1],
     },
     {
         img: "https://placekitten.com/130/120",
@@ -53,7 +53,7 @@ function insertImg(pne) {
     appendStr +=
             `
                 <td style="height:8vh;width:10vw">
-                    <img width=100px height=100px src="${pne.img}">
+                    <img class="img-thing" width=1000px height=1000px src="${pne.img}">
                 </td>`;
 }
 
@@ -62,7 +62,7 @@ function insertTxt(pne) {
             `
                 <td style="height:8vh;width:60vw">
                     <div class="p-card-txt">
-                        <p style="font-size:8vmin;"><b>${pne.name}</b></p>
+                        <p style="font-size:3vmin;margin-bottom:0vmin"><b>${pne.name}</b></p>
                         <p>${pne.brief}</p>
                     </div>
                     <div class="p-card-txt">
