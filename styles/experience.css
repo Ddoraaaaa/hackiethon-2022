@@ -14,13 +14,7 @@
   background-color: #5FC53B;
 }
 
-li.enp-card {
+.enp-card {
   display: flex;
-}
-.enp {
-  margin: auto;
   justify-content: center;
-  /* position:absolute; */
-  width: 60%;
-  padding: 10px;
 }

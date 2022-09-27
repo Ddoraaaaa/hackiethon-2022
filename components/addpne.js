@@ -71,7 +71,7 @@ function addPne(year) {
     let matchCount = 0;
     appendStr += 
 `
-    <ul class="projects">`;
+    <div class="projects">`;
     // console.log(appendStr);
 
     for(const project of PROJECTS) {
@@ -80,7 +80,7 @@ function addPne(year) {
             matchCount++;    
             appendStr += 
         `
-        <li class="enp-card">`;
+        <div class="enp-card">`;
         
             if(matchCount%2==0) {
                 insertImg(project);
@@ -92,21 +92,21 @@ function addPne(year) {
             }
             appendStr +=
         `
-        </li>`;
+        </div>`;
         }
     }
 
     appendStr += 
     `
-    </ul>
-    <ul class="experiences">`;
+    </div>
+    <div class="experiences">`;
 
     for(const exp of EXPS) {
         if(exp.year.includes(year)) {
             matchCount++;
             appendStr +=
         `
-        <li class="enp-card">`;
+        <div class="enp-card">`;
 
             if(matchCount%2==0) {
                 insertImg(exp);
@@ -118,13 +118,13 @@ function addPne(year) {
             }
             appendStr +=
         `
-        </li>`;
+        </div>`;
         }
     }
 
     appendStr += 
     `
-    </ul>`;
+    </div>`;
 }
 
 
