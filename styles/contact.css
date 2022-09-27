@@ -19,8 +19,8 @@ html, body {
 /* Contact form + medias */ 
 
 #contact-main {
-  background-image: url('../assets/tmp.jpg');
-  /* background-image: url('../train.mp4'); */
+  background-image: url('../assets/anime-train.gif');
+  background-size: 100%;
   color: white;
   height: 90%; 
 }
