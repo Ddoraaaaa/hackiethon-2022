@@ -22,7 +22,7 @@ export const PROJECTS = [
     },
 ];
 
-export const EXP = [
+export const EXPS = [
     {
         img: "placekitten.com/128/128",
         name: "Optiver",
@@ -44,4 +44,4 @@ export const EXP = [
         time: "Jan 2019 - Feb 2999",
         year: [2, 3],
     }
-]
+];
