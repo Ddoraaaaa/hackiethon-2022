@@ -1,8 +1,19 @@
 .about-me {
+    width: 80%;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin: 2vh;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
 }
 
 .line {
@@ -33,7 +44,7 @@
 }
 
 .about-container > p {
-    font-size: 24px;
+    font-size: 20px;
     margin: 2rem;
     padding: 0.5rem;
     border-radius: 1rem;
@@ -57,7 +68,7 @@
 
 
 .header {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: bold;
     margin: 0px auto;
 }
