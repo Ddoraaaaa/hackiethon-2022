@@ -1,0 +1,63 @@
+/* General settings */
+
+html, body {
+  height: 100%; 
+  margin: 0;  /* Remove default <body> margin */
+}
+
+#contact {
+  font-family: 'Nunito', serif;
+  height: 100%;
+}
+
+.contact-item {
+  width: 100%;
+  /* padding: 5px; */
+}
+
+/* Contact form + medias */ 
+
+#contact-main {
+  background-color: #134241;  
+  color: white;
+  height: 90%; 
+}
+
+#contact-form {
+  padding: 5%;
+  height: 100%; 
+  width: 50%;
+}
+
+#contact-links-wrapper {
+  position: relative;
+  width: 50%;
+  background-image: url('../assets/tmp.jpg');
+}
+
+#contact-links {
+  text-align: right;
+  position: absolute; 
+  bottom: 0; 
+  right: 0; 
+}
+
+.form-entry {
+  width: 100%;
+  margin: 3px; 
+}
+
+/* Footer */
+
+#contact-footer {
+  background-color:  #212B2A;
+  color: white; 
+  text-align: center;
+  height: 10%; 
+} 
+
+/* Flexbox */
+
+.contact-flex-container {
+  display: flex; 
+}
