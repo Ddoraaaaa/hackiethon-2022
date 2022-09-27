@@ -18,21 +18,21 @@ const PROJECTS = [
         name: "Cool project 1",
         brief: "Project to use in other cool stuffs very cool cool COOL!!!",
         time: "May 2020 - Dec 2020",
-        year: [2021, 2022, 2023],
+        year: [0, 2021, 2022, 2023],
     },
     {
         img: "https://placekitten.com/200/241",
         name: "Cool project 2",
         brief: "I like the bee movie pls love",
         time: "May 2020 - Dec 20222",
-        year: [2022, 2023],
+        year: [0, 2022, 2023],
     },
     {
         img: "https://placekitten.com/181/201",
         name: "Cool project 3",
         brief: "Peepeepoopoo bgfeuyuibadefbh dwiuef iufe iue fhiuefw u hefw huifew",
         time: "May 2020 - Dec 20222",
-        year: [2021, 2022],
+        year: [0, 2021, 2022],
     },
 ];
 
@@ -42,21 +42,21 @@ const EXPS = [
         name: "Optiver",
         brief: "I developed some things for them and they used those shit yeah haha!",
         time: " May 2021 - May 2022",
-        year: [2021],
+        year: [0, 2021],
     },
     {
         img: "https://placekitten.com/130/120",
         name: "Cat place",
         brief: "I love cats. I probably don't eat them. Probably.",
         time: "Jan 2020 - Feb 2021",
-        year: [2021],
+        year: [0, 2021],
     },
     {
         img: "https://placekitten.com/148/127",
         name: "IntegraDev",
         brief: "They pay a lot. Well the CEO is a sweet person",
         time: "Jan 2019 - Feb 2999",
-        year: [2022, 2023],
+        year: [0, 2022, 2023],
     }
 ];
 
@@ -118,6 +118,7 @@ function addPne(yearId) {
     appendStr += 
     `
     </div>
+    <hr class="border-line" align="center">
     <div class="experiences enp">`;
 
     for(const exp of EXPS) {
