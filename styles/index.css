@@ -38,11 +38,26 @@ body {
 }
 
 hr.border-line {
-    border: 0;
-    height: 2px;
+    margin: 0;
+    height: 3px;
     background: #333;
     background-image: linear-gradient(to right, rgb(225, 225, 225, 1), rgb(0, 0, 0, 1), rgb(225, 225, 225, 1));
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
+}
+
+hr.small-border-line {
+    margin: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, rgb(225, 225, 225, 1), rgb(150, 150, 150, 1), rgb(225, 225, 225, 1));
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+table.summary td:nth-child(4) {
+    border-left: 2px solid #000;
 }

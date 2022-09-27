@@ -16,6 +16,11 @@
   height:13vh;
 }
 
+.img-thing-summary{
+  width:10vh;
+  height:10vh;
+}
+
 .swiper-slide {
   display: flex;
   justify-content: center;
