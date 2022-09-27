@@ -17,7 +17,7 @@ body {
     flex-flow: column nowrap;
     scroll-snap-type: y mandatory; 
 }
-.container > div { 
+.y-snapper > div { 
     overflow: hidden; 
     height: 100vh;
     width: 100vw; 
@@ -25,12 +25,6 @@ body {
     flex: none;
     overflow: hidden;
 }
-.y.container > div {
-    line-height: 256px;
-    font-size: 128px;
-    width: 256px;
-    height: 100%;
-  }
 
 .section {
     flex-basis: auto;
