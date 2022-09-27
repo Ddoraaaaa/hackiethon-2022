@@ -1,5 +1,4 @@
 .about-me {
-    width: 60vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,7 +6,7 @@
 }
 
 .line {
-    width: 10rem;
+    width: 16rem;
     height: 3px;
     background-color: palevioletred;
     margin: 0px auto;
@@ -21,7 +20,6 @@
 .profile {
     margin: 1rem;
     border: 1rem;
-    border-color: red;
 }
 
 .profile > img {
@@ -35,6 +33,7 @@
 }
 
 .about-container > p {
+    font-size: 24px;
     margin: 2rem;
     padding: 0.5rem;
     border-radius: 1rem;
@@ -46,18 +45,19 @@
 }
 
 #delay {
-    background-image: linear-gradient(to top, #134241, #ffeeff);
-    transition-property: background-image;
+    background-color: #13424199;
     transition-duration: 1s;
-    transition-delay: 1s;
   }
   
 #delay:hover {
-    background-image: linear-gradient(to bottom, #134241, #ffeeff);
+    background-color: #134241ee;
+    transition-property: background-color;
+    transition-duration: 1s;
 }
 
 
 .header {
+    font-size: 48px;
     font-weight: bold;
     margin: 0px auto;
 }
