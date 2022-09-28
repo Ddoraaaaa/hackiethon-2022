@@ -14,6 +14,13 @@ const contentSwiper = new Swiper('#content-swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    pagination: {
+      el: '.swiper-pagination',
+			clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (menu[index]) + '</span>';
+        },
+    },
   });
 
   // const controlSwiper = new Swiper('#control-swiper', {
