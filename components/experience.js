@@ -22,17 +22,4 @@ const contentSwiper = new Swiper('#content-swiper', {
     },
   });
 
-  // const controlSwiper = new Swiper('#control-swiper', {
-  //   spaceBetween: 10,
-  //   centeredSlides: true,
-  //   slidesPerView: 'auto',
-  //   // touchRatio: 0.2,
-  //   slideToClickedSlide: true,
-  //   loop: true,
-  //   loopedSlides: 2,
-  // });
-
   contentSwiper.controller.control = [backgroundSwiper];
-// contentSwiper.controller.control = [controlSwiper, backgroundSwiper];
-// controlSwiper.controller.control = [contentSwiper];  
-
