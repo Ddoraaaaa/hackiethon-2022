@@ -122,6 +122,9 @@
 .row-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 10rem;
 }
 
 .circle {
@@ -131,7 +134,7 @@
     font-size: 28px;
     margin: 2rem;
     padding: 0.5rem;
-    border-radius: 100%;
+    border-radius: 30%;
     flex-grow: 1;
     text-align: center;
     align-items: center;
@@ -140,6 +143,9 @@
     background-color: #ffeeff;
     opacity: 90%;
     height: 80%;
+    color: #121212;
+    font-weight: bold;
+    max-width: 20vw;
 }
 
 .circle:hover {
@@ -151,4 +157,16 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+#photo {
+    background-image: url(/assets/photo.jpg);
+}
+
+#simulation {
+    background-image: url(/assets/simulation.jpg);
+}
+
+#programming {
+    background-image: url(/assets/programming.jpg);
 }
