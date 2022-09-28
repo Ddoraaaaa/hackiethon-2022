@@ -38,7 +38,7 @@
 }
 .swiper-pagination-bullet-active {
 	color:#fff;
-	background: rgb(34, 119, 101)
+	background: radial-gradient(rgba(34, 119, 101), rgba(35, 108, 92, 0.1)) ; 
 }
 
 .swiper-slide {
