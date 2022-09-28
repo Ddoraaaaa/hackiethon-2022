@@ -115,7 +115,7 @@
 
 .fullscreen {
     width: 100vw;
-    height: 99vh;
+    height: 70vh;
 }
 
 
@@ -168,5 +168,5 @@
 }
 
 #programming {
-    background-image: url(/assets/programming.jpg);
+    background-image: url(/assets/programming_alt.jpg);
 }
