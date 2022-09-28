@@ -94,10 +94,20 @@
     background-color: #13424199;
     transition-duration: 1s;
   }
+
+#delay > h1 {
+    color: black;
+    transition-duration: 1s;
+  }
   
 #delay:hover {
     background-color: #134241dd;
     transition-property: background-color;
+    transition-duration: 1s;
+}
+
+#delay:hover > h1 {
+    color: #dcdcdc;
     transition-duration: 1s;
 }
 
