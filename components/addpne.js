@@ -19,7 +19,7 @@ const years = [
 const PROJECTS = [
     {
         img: "https://placekitten.com/100/100",
-        name: "Cool project 1",
+        name: "Cool project 1!",
         brief: "Placeholder project to demonstrate my growth among the years",
         time: "Aug 2021",
         year: [0, 2021],
