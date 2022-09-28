@@ -33,7 +33,7 @@ body {
 }
 
 .nav--hidden {
-    transform: translateY(calc(-1 * var(--nav-height)));
+    transform: translateY(-10vh);
     box-shadow: none;
 }
 
