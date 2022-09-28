@@ -20,6 +20,12 @@
   width:10vh;
   height:10vh;
 }
+.swiper-button-next { 
+  color: rgb(115, 108, 108); 
+}
+.swiper-button-prev { 
+  color: rgb(115, 108, 108); 
+}
 
 .swiper-slide {
   display: flex;
