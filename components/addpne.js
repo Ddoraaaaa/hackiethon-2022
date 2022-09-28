@@ -307,7 +307,7 @@ for(year of years) {
     // controlSlide.innerHTML=year.id; 
     backgroundSlide.innerHTML=`<img src=${year.bg} width=100% height=100%>`; 
 
-    console.log(appendStr);
+    // console.log(appendStr);
     document.getElementById("content-wrapper").appendChild(contentSlide);
     // document.getElementById("control-wrapper").appendChild(controlSlide); 
     document.getElementById("background-wrapper").appendChild(backgroundSlide);
