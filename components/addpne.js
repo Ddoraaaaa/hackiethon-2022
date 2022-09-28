@@ -63,23 +63,23 @@ const PROJECTS = [
 
 const EXPS = [
     {
-        img: "https://placekitten.com/128/128",
+        img: "https://pbs.twimg.com/profile_images/1554030696712359936/C0vq0Sju_400x400.jpg",
         name: "Optiver",
         brief: "I developed some things for them and they used those shit yeah haha!",
         time: " May 2021 - May 2022",
         year: [0, 2021, 2022],
     },
     {
-        img: "https://placekitten.com/130/120",
-        name: "Cat place",
-        brief: "I love cats. I probably don't eat them. Probably.",
+        img: "https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/0a3d4f75-a4ca-45e0-a4e5-95777c3e77d6.png?auto=format&size=150",
+        name: "Blinq",
+        brief: "They force me to blink. They held my family hostage and made me blink second-ly",
         time: "Jan 2020 - Feb 2021",
         year: [0, 2022, 2023],
     },
     {
         img: "https://placekitten.com/148/127",
         name: "IntegraDev",
-        brief: "They pay a lot. Well the CEO is a sweet person",
+        brief: "They pay a lot. idk thats it. I like the ceo",
         time: "Jan 2019 - Feb 2999",
         year: [0, 2023],
     }

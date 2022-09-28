@@ -36,8 +36,8 @@ function scrollToEl(el) {
   
     let lastupd = Date.now();
     divv.addEventListener("scroll", () => {
-      if(lastupd+10000<Date.now()) return;
-      lastupd = Date.now();
+      // if(lastupd+1000<Date.now()) return;
+      // lastupd = Date.now();
       console.log(divv.scrollTop);
       if (lastScroll < divv.scrollTop) {
         window.scrollTo({
