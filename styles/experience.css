@@ -12,11 +12,13 @@
 }
 
 .img-thing{
+  border-radius: 2vmin;
   width:15vh;
   height:13vh;
 }
 
 .img-thing-summary{
+  border-radius: 1vmin;
   width:10vh;
   height:10vh;
 }
