@@ -116,6 +116,7 @@
 .fullscreen {
     width: 100vw;
     height: 111vh;
+    border-radius: 0;
 }
 
 
