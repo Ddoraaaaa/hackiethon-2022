@@ -1,10 +1,9 @@
-
- const backgroundSwiper = new Swiper('#background-swiper', {
+const backgroundSwiper = new Swiper('#background-swiper', {
   // direction: 'horizontal',
   effect: 'fade',
   // loop: true,
 });
-
+var yearIds = ['2021', '2022', '2023', '2024']; 
 const contentSwiper = new Swiper('#content-swiper', {
     direction: 'horizontal',
     speed: 3000,
@@ -18,7 +17,7 @@ const contentSwiper = new Swiper('#content-swiper', {
       el: '.swiper-pagination',
 			clickable: true,
         renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (menu[index]) + '</span>';
+          return '<span class="' + className + '"></span>';
         },
     },
   });

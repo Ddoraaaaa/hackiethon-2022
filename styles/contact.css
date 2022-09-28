@@ -35,7 +35,7 @@ html, body {
   margin-left: 5%; 
   padding-top: 3%; 
   padding-left: 3%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.77), rgba(19, 66, 65, 0.5)); 
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.77), rgba(19, 66, 65, 0.5));  
   border-radius: 20px;  
   height: 70%; 
 }
