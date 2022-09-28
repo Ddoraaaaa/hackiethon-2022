@@ -41,6 +41,10 @@
     align-items: center;
 }
 
+.about-me-background {
+    background-image: url("/assets/spring.jpg");
+}
+
 .transparent {
     opacity: 0;
 }
@@ -124,7 +128,7 @@
     display: flex;
     transition-duration: 1s;
     background-size: 100%;
-    font-size: 20px;
+    font-size: 28px;
     margin: 2rem;
     padding: 0.5rem;
     border-radius: 100%;
