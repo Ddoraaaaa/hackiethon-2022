@@ -28,18 +28,30 @@ function scrollToEl(el) {
 }
 
 // // Enable hidden nav bar
-// {
-//     const nav = document.querySelector(".navbar");
-//     let lastScrollY = window.scrollY;
+{
+    const divv = document.getElementById("bigBadBox");
+    console.log(divv);
+    const nav = document.querySelector(".navbarr");
+    let lastScroll = divv.scrollTop;
   
-//     window.addEventListener("scroll", () => {
-//       if (lastScrollY < window.scrollY) {
-//         nav.classList.add("nav--hidden");
-//       } else {
-//         nav.classList.remove("nav--hidden");
-//       }
+    let lastupd = Date.now();
+    divv.addEventListener("scroll", () => {
+      if(lastupd+10000<Date.now()) return;
+      lastupd = Date.now();
+      console.log(divv.scrollTop);
+      if (lastScroll < divv.scrollTop) {
+        window.scrollTo({
+          top: 1000,
+          behavior: "smooth",
+        });
+      } else {
+        window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      }
   
-//       lastScrollY = window.scrollY;
-//     });
-//   }
+      lastScroll = divv.scrollTop;
+    });
+}
   

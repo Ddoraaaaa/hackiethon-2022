@@ -15,7 +15,6 @@
         <script src="https://kit.fontawesome.com/3c7e1f4ad4.js" crossorigin="anonymous"></script>
         <!-- bulma -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-        <script src="./components/navbar.js"></script>
         <link rel="stylesheet" href="./styles/index.css">
         <script>
             $(function() {
@@ -35,7 +34,7 @@
     </head>
 
     <body>
-        <header>
+        <header class="navbarr">
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <img src="https://i.pinimg.com/736x/1e/47/fe/1e47fef15ffbc923554712272e85ba09.jpg" style="width:auto;height:7vh;margin:1vh">
                 <div class="navbar-brand">
@@ -60,11 +59,12 @@
                 </div>
             </nav>
         </header>
-        <div class="container1 y-snapper">
+        <div class="container1 y-snapper" id="bigBadBox">
             <div id="landing-page"></div>
             <div id="about-me"></div>
             <div id="experience"></div>
             <div id="contact"></div>
         </div>
     </body>
+    <script src="./components/navbar.js"></script>
 </html>
