@@ -1,19 +1,19 @@
 const years = [
     { 
         id: 2021, 
-        bg: ".\/assets\/spring.jpg",
+        bg: ".\/assets\/page1.png",
     }, 
     { 
         id: 2022, 
-        bg: ".\/assets\/fall.jpg",
+        bg: ".\/assets\/page2.png",
     }, 
     { 
         id: 2023, 
-        bg: ".\/assets\/winter.jpg",
+        bg: ".\/assets\/page3.png",
     },
     { 
         id: 0, 
-        bg: ".\/assets\/tree-1.jpg",
+        bg: ".\/assets\/page4.png",
     }
 ]; 
 const PROJECTS = [
@@ -305,7 +305,7 @@ for(year of years) {
     else addSummary();
     contentSlide.innerHTML=appendStr;
     // controlSlide.innerHTML=year.id; 
-    backgroundSlide.innerHTML=`<img src=${year.bg} width=100% height=100%>`; 
+    backgroundSlide.innerHTML=`<img src=${year.bg} style="height:100vh;width:auto">`; 
 
     // console.log(appendStr);
     document.getElementById("content-wrapper").appendChild(contentSlide);

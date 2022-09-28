@@ -5,7 +5,7 @@ const backgroundSwiper = new Swiper('#background-swiper', {
 });
 var yearIds = ['2021', '2022', '2023', '2024']; 
 const contentSwiper = new Swiper('#content-swiper', {
-    direction: 'horizontal',
+    direction: 'vertical',
     speed: 3000,
     // effect: 'fade',
     // loop: true,
